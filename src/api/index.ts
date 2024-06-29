@@ -1,6 +1,4 @@
 import express from 'express';
-import { Prisma, PrismaClient } from '@prisma/client'
-const prisma = new PrismaClient()
 import MessageResponse from '../interfaces/MessageResponse';
 import emojis from './emojis';
 
