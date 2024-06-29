@@ -5,9 +5,7 @@ import emojis from './emojis';
 const router = express.Router();
 
 router.post<{}, any>('/add', async (req, res) => {
-  console.log("This MotherFuck Body", req.body);
-  console.log("This MotherFuck REQ", req);
-  return res.status(202).json({ success: true })
+  return res.status(202).json(req.body);
 });
 
 export default router;
